@@ -5,8 +5,8 @@ else
     python3 -m venv env
 fi
 
-
-source ./env/bin/activate
+ls
+source env/bin/activate
 echo "in env"
 
 

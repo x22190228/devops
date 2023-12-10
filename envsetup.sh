@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo su
 if [ -d "env" ] 
 then
     echo "Python virtual environment exists." 

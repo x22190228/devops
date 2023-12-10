@@ -3,7 +3,7 @@
 source env/bin/activate
 echo "In Environment"
 cd /var/lib/jenkins/workspace/devops-cicd/app
-
+echo "in app folder"
 python3 manage.py makemigrations
 python3 manage.py migrate
 python3 manage.py collectstatic -- no-input

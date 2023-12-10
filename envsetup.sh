@@ -6,7 +6,7 @@ else
 fi
 
 
-source env/bin/activate
+source ./env/bin/activate
 echo "in env"
 
 

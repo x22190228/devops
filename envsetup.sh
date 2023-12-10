@@ -9,16 +9,8 @@ else
 fi
 
 source env/bin/activate
-
+echo "ENV Activated!" 
 
 pip3 install -r requirements.txt
 
-if [ -d "logs" ] 
-then
-    echo "Log file already exist." 
-else
-    mkdir logs
-    touch logs/error.log logs/access.log
-fi
-
-sudo chmod -R 777 logs
+echo "Dependencies Installed" 

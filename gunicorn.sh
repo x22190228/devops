@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source env/bin/activate
-pip freeze
+echo "In Environment"
 cd /var/lib/jenkins/workspace/devops-cicd/app
 
 python3 manage.py makemigrations

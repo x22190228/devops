@@ -1,9 +1,7 @@
-# #!/bin/bash
+#!/bin/bash
 
 source env/bin/activate
-echo "environment Activated!"
-sudo apt install python3-pip
-pip3 install -r requirements.txt
+
 cd /var/lib/jenkins/workspace/devops-cicd/app
 
 python3 manage.py makemigrations
@@ -35,4 +33,3 @@ sudo systemctl restart gunicorn
 
 
 sudo systemctl status gunicorn
-

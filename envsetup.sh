@@ -1,5 +1,3 @@
-#!/bin/bash
-
 if [ -d "env" ] 
 then
     echo "Python virtual environment exists." 
@@ -14,7 +12,7 @@ pip3 install -r requirements.txt
 
 if [ -d "logs" ] 
 then
-    echo "Log file already exist." 
+    echo "Log folder exists." 
 else
     mkdir logs
     touch logs/error.log logs/access.log

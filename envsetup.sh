@@ -4,8 +4,10 @@ then
 else
     python3 -m venv env
 fi
-cd /var/lib/jenkins/workspace/devops-cicd
+
+
 source env/bin/activate
+echo "in env"
 
 
 pip3 install -r requirements.txt

@@ -2,7 +2,7 @@ pipeline{
     agent any
     stages {
     
-        stage('Settup Python Virtual Environment'){
+        stage('Setup Python Virtual Environment'){
        
             steps {
                 sh '''
@@ -11,7 +11,21 @@ pipeline{
                 '''
             }
         }
-
-        
+        stage('Setup Gunicorn Setup'){
+            steps {
+                sh '''
+                chmod +x gunicorn.sh
+                ./gunicorn.sh
+                '''
+            }
+        }
+        stage('setup NGINX'){
+            steps {
+                sh '''
+                chmod +x nginx.sh
+                ./nginx.sh
+                '''
+            }
+        }
     }
 }

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+source env/bin/activate
 
 echo "In Environment"
 cd /var/lib/jenkins/workspace/devops-cicd/app

@@ -2,6 +2,7 @@
 
 source env/bin/activate
 echo "environment Activated!"
+sudo apt install python3-pip
 pip3 install -r requirements.txt
 cd /var/lib/jenkins/workspace/devops-cicd/app
 

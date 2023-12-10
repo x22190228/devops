@@ -9,7 +9,7 @@ source env/bin/activate
 
 
 pip3 install -r requirements.txt
-
+echo "Requirements installed"
 if [ -d "logs" ] 
 then
     echo "Log folder exists." 

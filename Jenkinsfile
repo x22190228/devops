@@ -2,24 +2,23 @@ pipeline{
     agent any
     stages {
     
-        stage('Settup Python Virtual Environment'){
-       
+        stage('Setup Django Python Virtual Environment'){
             steps {
                 sh '''
                 chmod +x envsetup.sh
-                ./envsetup.sh
+                ./djangosetup.sh
                 '''
             }
         }
-        stage('Setup Gunicorn Setup'){
+        stage('Setup Gunicorn for Django Connection'){
             steps {
                 sh '''
                 chmod +x gunicorn.sh
-                ./gunicorn.sh
+                ./djangogunicorn.sh
                 '''
             }
         }
-        stage('setup NGINX'){
+        stage('setup NGINX Proxy Server'){
             steps {
                 sh '''
                 chmod +x nginx.sh

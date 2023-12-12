@@ -5,7 +5,7 @@ pipeline{
         stage('Setup Django Python Virtual Environment'){
             steps {
                 sh '''
-                chmod +x envsetup.sh
+                chmod +x djangosetup.sh
                 ./djangosetup.sh
                 '''
             }
@@ -13,7 +13,7 @@ pipeline{
         stage('Setup Gunicorn for Django Connection'){
             steps {
                 sh '''
-                chmod +x gunicorn.sh
+                chmod +x djangogunicorn.sh
                 ./djangogunicorn.sh
                 '''
             }
